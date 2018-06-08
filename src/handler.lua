@@ -2,6 +2,7 @@ local constants = require "kong.constants"
 local responses = require "kong.tools.responses"
 local BasePlugin = require "kong.plugins.base_plugin"
 
+local get_headers = ngx.req.get_headers
 local set_header = ngx.req.set_header
 
 local KeyAuthValuePassHandler = BasePlugin:extend()
