@@ -18,6 +18,7 @@ function KeyAuthValuePassHandler:header_filter(config)
 
     -- Ensure the custom_id begins with the configured prefix
     if not string.starts(custom_id, config.prefix)
+    then
         return responses.send_HTTP_UNAUTHORIZED("API key not authorized for this API")
     end
 
