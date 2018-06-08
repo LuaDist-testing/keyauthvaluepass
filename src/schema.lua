@@ -1,7 +1,7 @@
 return {
     no_consumer = true,
     fields = {
-        prefix = {type = "string", required = true},
-        header_name = {type="string", required = true}
+        prefix = {required = true, type = "string"}
+        header_name = {require = true, type="string"}
     }
 }

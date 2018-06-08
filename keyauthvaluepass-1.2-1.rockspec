@@ -1,9 +1,17 @@
-package = "KeyAuthValuePass"
-version = "1.5-4"
+-- This file was automatically generated for the LuaDist project.
+
+package = "keyauthvaluepass"
+version = "1.2-1"
+-- LuaDist source
 source = {
-    url = "git://github.com/jhitzke/key-auth-value-pass",
-    tag = "1.5-4"
+  tag = "1.2-1",
+  url = "git://github.com/LuaDist-testing/keyauthvaluepass.git"
 }
+-- Original source
+-- source = {
+--     url = "git://github.com/jhitzke/key-auth-value-pass",
+--     tag = "1.2-1"
+-- }
 description = {
     summary = "Pass a value via custom_id using key-auth, using a given prefix",
     license = "MIT/X11"
