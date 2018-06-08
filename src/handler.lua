@@ -6,6 +6,14 @@ local set_header = ngx.req.set_header
 
 local KeyAuthValuePassHandler = BasePlugin:extend()
 
+-- Util functions
+
+function string.starts(String,Start)
+   return string.sub(String,1,string.len(Start))==Start
+end
+
+
+-- Plugin implementation
 
 function KeyAuthValuePassHandler:new()
     KeyAuthValuePassHandler.super.new(self, "key-auth-value-pass")
