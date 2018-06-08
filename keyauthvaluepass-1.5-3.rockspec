@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "keyauthvaluepass"
-version = "1.5-2"
+version = "1.5-3"
 -- LuaDist source
 source = {
-  tag = "1.5-2",
+  tag = "1.5-3",
   url = "git://github.com/LuaDist-testing/keyauthvaluepass.git"
 }
 -- Original source
 -- source = {
 --     url = "git://github.com/jhitzke/key-auth-value-pass",
---     tag = "1.5-2"
+--     tag = "1.5-3"
 -- }
 description = {
     summary = "Pass a value via custom_id using key-auth, using a given prefix",

@@ -7,6 +7,8 @@ local set_header = ngx.req.set_header
 
 local KeyAuthValuePassHandler = BasePlugin:extend()
 
+KeyAuthValuePassHandler.PRIORITY = 10
+
 -- Util functions
 
 function string.starts(String,Start)
