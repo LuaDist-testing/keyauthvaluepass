@@ -22,7 +22,7 @@ function KeyAuthValuePassHandler:new()
     KeyAuthValuePassHandler.super.new(self, "key-auth-value-pass")
 end
 
-function KeyAuthValuePassHandler:header_filter(config)
+function KeyAuthValuePassHandler:access(config)
     KeyAuthValuePassHandler.super.header_filter(self)
 
     local custom_id = get_headers()[constants.HEADERS.CONSUMER_CUSTOM_ID]
